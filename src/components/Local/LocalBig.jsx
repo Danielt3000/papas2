@@ -8,7 +8,7 @@ function LocalBig() {
     long: -100.2858830518688,
   });
 
-  const [view, setView] = useState(3.3);
+  const [view, setView] = useState(4);
 
   function handleShowMap(long, lat) {
     setLongLat({
@@ -16,7 +16,7 @@ function LocalBig() {
       long: long,
     });
 
-    setView(3);
+    setView(3.7);
 
     setTimeout(() => {
       const intervalId = setInterval(() => {

@@ -45,7 +45,7 @@ function Navbar() {
             <img
               src={logo}
               width="135"
-              className="p-2 mt-10 bg-[#ffffff38] rounded-xl"
+              className="p-2 mt-10 bg-[#ffffff94] rounded-xl"
               alt=""
             />
           </SmoothScrollLink>
@@ -68,7 +68,7 @@ function Navbar() {
         <div
           className={
             toggle
-              ? "hidden lg:flex lg:items-center lg:w-auto w-full bg-[#ffffff38] p-5 rounded-lg mt-10  "
+              ? "hidden lg:flex lg:items-center lg:w-auto w-full bg-[#ffffff00] p-5 rounded-lg mt-10  "
               : "lg:flex lg:items-center  w-full bg-white rounded-xl"
           }
           id="menu"
