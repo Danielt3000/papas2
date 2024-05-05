@@ -1,5 +1,4 @@
 import "./App.css";
-import Home from "./components/Home";
 import ComponentParallex from "./components/Parallex/ComponentParallex";
 import { useEffect } from "react";
 import AOS from "aos";
