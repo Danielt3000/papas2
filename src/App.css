@@ -1,0 +1,78 @@
+#root{
+  padding: 0  ;
+  margin: 0;
+
+/* font-family:"Manrope",sans-serif */
+font-family: "Rokkitt", serif;
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Ensures the video is behind other content */
+  
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Ensures the video is behind other content */
+  filter: blur(4px);
+
+
+}
+
+.index {
+  /* position: relative;
+  z-index: 0; */
+
+  
+}
+
+
+.sha-inn{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+
+
+}
+
+.blur::before{
+position: absolute;
+content: "";
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.66);
+
+z-index: 2;
+}
+
+
+
+
+.nav-container {
+  position: relative; /* Ensure a position context */
+  height: 100px; /* Example height, adjust as needed */
+}
+
+nav {
+  position: sticky;
+  top: 0; /* Stick to the top of the parent container */
+}
