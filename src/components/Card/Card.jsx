@@ -1,7 +1,5 @@
 import React from "react";
-import papas1 from "../assets/papasmanos.jpg";
-import papas2 from "../assets/papas2.jpg";
-import papas3 from "../assets/papacostal.mp4";
+
 
 function Card() {
   return (

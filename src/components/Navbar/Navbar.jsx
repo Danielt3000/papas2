@@ -38,7 +38,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full ">
+    <div className="w-full  back">
       <nav className="lg:px-16 px-6   mx-auto   flex flex-wrap items-center lg:py-0 py-2 ">
         <div className="flex-1 flex justify-between items-center">
           <SmoothScrollLink to="/" className="flex text-lg font-semibold ">

@@ -18,10 +18,12 @@ function ComponentParallex() {
   }, []);
   return (
     <div>
-      <div className="">
-        <Navbar />
+      <div className="background">
+        <div className="">
+          <Navbar />
+        </div>
+        <VideoBack />
       </div>
-      <VideoBack />
       <div className=" sha-inn z-40 lg:mt-[px] pt-10">
         <div>
           <div className="md:px-20">
@@ -35,15 +37,15 @@ function ComponentParallex() {
             </section>
             <section id="nostros" className="container mx-auto xl:w-[1000px]">
               <div className="container  bg-[#1a1a61f4] rounded-xl px-5 md:flex ">
-                <div className="md:border-r-4 border-white text-2xl text-center md:text-3xl     "  >
-                  <div className="h-full max-lg:mt-10" >
+                <div className="md:border-r-4 border-white text-2xl text-center md:text-3xl     ">
+                  <div className="h-full max-lg:mt-10">
                     <h1 className="    text-white pt-8 ">
                       Lavando papas para llevarlo a su lugar mas cercano y como
                       amdinistrarlo
                     </h1>
                   </div>
                 </div>
-                <p className=" text-white py-5 text-md leading-8 font-medium md:w-11/12 md:ml-10"  >
+                <p className=" text-white py-5 text-md leading-8 font-medium md:w-11/12 md:ml-10">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
                   dolorum facilis maiores dolorem atque, amet earum! Dolore
                   dolor blanditiis inventore dolorum nostrum veritatis, numquam,

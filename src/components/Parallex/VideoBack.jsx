@@ -1,20 +1,20 @@
 import React from "react";
-import video from "../assets/papacostal.mp4";
+import video from "../assets/papacostal.webm";
 
 function VideoBack() {
   return (
-    <div className="pb-10">
+    <div className="pb-10   ">
       <div
-        class="video-container   "
+        class="video-container      "
         data-aos="zoom-in-up"
         data-aos-easing="linear"
       >
-        <span className="blur  "></span>
-        <video class="video" src={video} autoPlay muted loop />
+        <span className="blur   "></span>
+        <video class="video  " src={video} autoPlay muted loop />
       </div>
 
       <div
-        class="index z-10 text-3xl sm:text-4xl md:text-5xl xl:text-6xl  text-center text-white xl:mt-28     py-5"
+        class="index z-10 text-3xl sm:text-4xl md:text-5xl xl:text-6xl  text-center text-white xl:mt-28  mt-10    py-5"
         data-aos="zoom-in"
         data-
       >

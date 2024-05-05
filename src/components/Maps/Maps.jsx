@@ -1,7 +1,7 @@
 import React from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import potato from "../Maps/assets/potato.png";
-import store from "../Maps/assets/store.png";
+import store from "./assets/icon.png";
+import { mapOptions } from "./MapConfig";
 
 function Maps({ array, larg, heith, view }) {
   const myVariable = import.meta.env.VITE_MY_VARIABLE;
@@ -44,6 +44,7 @@ function Maps({ array, larg, heith, view }) {
           streetView: false,
           navigationControl: false,
           disableDefaultUI: true,
+          styles: mapOptions.googleMapsTheme,
         }}
         center={center}
         zoom={view}
@@ -51,7 +52,7 @@ function Maps({ array, larg, heith, view }) {
         <Marker position={singleMarker} icon={store} />
 
         {locations.map((location, index) => (
-          <Marker key={index} position={location} icon={potato} />
+          <Marker key={index} position={location} />
         ))}
       </GoogleMap>
     </div>
