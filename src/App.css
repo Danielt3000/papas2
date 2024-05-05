@@ -35,6 +35,7 @@ font-family: "Rokkitt", serif;
   min-height: 100%;
   z-index: -1; /* Ensures the video is behind other content */
   filter: blur(4px);
+  object-fit: cover;
 
 
 }
