@@ -2,10 +2,10 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="" id="contact">
-      <div class="flex justify-center items-center w-screen   ">
+    <div id="contact">
+      <div class="flex justify-center items-center w-screen max-xs:px-2    ">
         <div class="container mx-auto  lg:px-20">
-          <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-[#e9e9e9]">
+          <div class="   sm:w-full  p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-[#e9e9e9]">
             <div class="flex">
               <h1 class="font-bold uppercase text-5xl">
                 envianos un <br /> mensaje

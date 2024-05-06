@@ -12,6 +12,8 @@ import ota1 from "./assets/ota1.png";
 import ota2 from "./assets/ota2.png";
 import ota3 from "./assets/ota3.png";
 import ota4 from "./assets/ota4.png";
+import left from "../assets/left.png";
+import right from "../assets/right.png";
 
 function CardPotatos() {
   const img = [
@@ -42,44 +44,36 @@ function CardPotatos() {
   ];
 
   return (
-    <div className="mt-10">
+    <div className="mt-10  ">
       <h1 className="text-center text-4xl font-bold ">Nuestros Productos</h1>
-      <div className="flex flex-wrap justify-center gap-10 mt-10">
+      <div className="flex gap-10 justify-center  mt-10">
         {img.map((item) => {
           return (
-            <div key={Math.random(2 * 23)}>
+            <div key={Math.random(2 * 23)} className="">
               <div>
-                <Card
-                  className="max-w-sm w-[100%] bg-[#1a1a61f4] "
-                  imgSrc={item.img}
-                >
-                  {/* <img
-                    className="w-full h-48 object-cover p-0"
-                    src={item.img}
-                    alt="Potato1"
-                  /> */}
+                <Card imgSrc={item.img} className="bg-[#c19b43] ">
                   <div className="p-0">
-                    <h5 className="text-xl font-semibold tracking-tight text-white text-center mt-2 dark:text-white">
+                    <h5 className="text-xl font-semibold tracking-tight text-white text-center dark:text-white">
                       {item.nombre}
                     </h5>
                   </div>
                 </Card>
               </div>
 
-              <div className="h-[300px] mt-5 w-[300px]  rounded-md ml-6">
-                <Carousel pauseOnHover>
+              <div className="w-full h-[50%] mt-6 ">
+                <Carousel pauseOnHover leftControl=" " rightControl=" ">
                   <img
-                    className="object-contain w-full h-full"
+                    className=" object-cover w-[100%] h-[100%]"
                     src={item.carousel[0]}
                     alt=""
                   />
                   <img
-                    className="object-contain w-full h-full"
+                    className="object-cover w-[100%] h-[100%]"
                     src={item.carousel[1]}
                     alt=""
                   />
                   <img
-                    className="object-contain w-full h-full"
+                    className="object-cover w-[100%] h-[100%]"
                     src={item.carousel[2]}
                     alt=""
                   />

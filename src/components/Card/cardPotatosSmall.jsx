@@ -1,43 +1,43 @@
 import React, { useState, useRef } from "react";
 import { Card, Carousel, Button, Tabs } from "flowbite-react";
 import CardInside from "./CardInside";
+import fina1 from "./assets/fina1.png";
+import fina2 from "./assets/fina2.png";
+import fina3 from "./assets/fina3.png";
+import fina4 from "./assets/fina4.png";
+import agata1 from "./assets/agata1.png";
+import agata2 from "./assets/agata2.png";
+import agata3 from "./assets/agata3.png";
+import agata4 from "./assets/agata4.png";
+import ota1 from "./assets/ota1.png";
+import ota2 from "./assets/ota2.png";
+import ota3 from "./assets/ota3.png";
+import ota4 from "./assets/ota4.png";
 
 function CardPotatosSmall() {
   const [activeTab, setActiveTab] = useState(0);
 
   const items = [
     {
-      img: "https://agrotendencia.tv/wp-content/uploads/2019/10/agrotendencia-papa-20.jpg",
+      img: fina1,
       nombre: "Papa Fina",
-      carousel: [
-        "https://www.tasteatlas.com/images/ingredients/dddd72f997c544a28a2d74798c65aaaa.jpg",
-        "https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750,f_auto/f_auto/Robyns-Blog-Template--2023-09-26T102652824-phpp0gWya",
-        "https://www.theseedcollection.com.au/assets/full/Z-POT-01.jpg?20210722143729",
-      ],
+      carousel: [fina2, fina3, fina4],
 
       descripcion:
         " Papa Fina: Versátil tubérculo cultivado globalmente, esencial en la dieta, valorado por su sabor y textura en diversas preparaciones culinarias.",
     },
     {
-      img: "https://i0.wp.com/www.asausagehastwo.com/wp-content/uploads/2014/04/IMG_1570.jpg?resize=770%2C578&ssl=1",
+      img: agata1,
       nombre: "Papa Agata",
-      carousel: [
-        "https://www.yesilmesetarim.com.tr/en/images/product/everest.jpg",
-        "https://static.pourdebon.com/images/500-370/63e94430c46546506e0b77f5ee2f3a1b/pommes_de_terre_agata.jpeg",
-        "https://www.picturethisai.com/wiki-image/1080/82A53F5F34C54E2591AE92876343F403.jpeg",
-      ],
+      carousel: [agata2, agata3, agata4],
 
       descripcion:
         " Agatha: piel fina, carne amarilla, apreciada por su sabor y textura en diferentes platillos.",
     },
     {
-      img: "https://www.foodformzansi.co.za/wp-content/uploads/2018/11/potatoes-1585075_1920.jpg",
+      img: ota1,
       nombre: "Papa Orquesta",
-      carousel: [
-        "https://turntable.kagiso.io/images/Screenshot_2022-08-25_at_11.06.14.width-800.png",
-        "https://www.foodformzansi.co.za/wp-content/uploads/2022/01/Potatoes-EDIT.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUwpJVNSQw7zgBzOwFDFVMZsr3ng0desfu3X4ltKs7ZDvNqr8yybs60iqOd8PRO02xzc&usqp=CAU",
-      ],
+      carousel: [ota2, ota3, ota4],
 
       descripcion:
         " Papa Orquesta: Tubérculo excepcional, reconocido por su amplia gama de formas y sabores, una verdadera variedad culinaria.",

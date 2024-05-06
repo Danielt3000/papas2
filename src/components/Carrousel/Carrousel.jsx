@@ -5,11 +5,11 @@ import papas3 from "./assets/papasRecogiendo.jpg";
 
 function Carrousel() {
   return (
-    <div className="h-56  md:w-[70%] mx-auto  sm:h-64 xl:h-80 2xl:h-96 mt-16">
-      <Carousel slide={false}>
-        <img src={papas1} alt="..." />
-        <img src={papas2} alt="..." />
-        <img src={papas3} alt="..." />
+    <div className="h-[100%] mx-auto xs:w-[80%]  xs:mt-11  w-[100%] rounded-2xl">
+      <Carousel slide={false} className="rounded-2xl" indicators={false}>
+        <img className="rounded-2xl" src={papas1} alt="..." />
+        <img className="rounded-2xl" src={papas2} alt="..." />
+        <img className="rounded-2xl" src={papas3} alt="..." />
       </Carousel>
     </div>
   );

@@ -26,7 +26,7 @@ function Local() {
   }
 
   return (
-    <div className="px-6 xs:w-[400px] sm:w-[80vw]   mx-auto  pb-10 ">
+    <div className="px-6 xs:w-[400px] sm:w-[80vw]   mx-auto   pb-10 ">
       <div className="">
         <h1 className="text-3xl font-bold text-center">
           Esta es Nuestra Sucurrsal
@@ -57,7 +57,7 @@ function Local() {
           ))}
         </div>
         <div className="gap-10 flex flex-wrap mt-4 justify-center">
-          <Maps array={longLat} larg="300px" heith="280px" view={view} />
+          <Maps array={longLat} larg="280px" heith="280px" view={view} />
         </div>
       </div>
     </div>

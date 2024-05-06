@@ -14,12 +14,13 @@ function Navbar() {
   }
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-      }
-    };
+    window.addEventListener("resize", (value) => {
+      const width = value.target.innerWidth;
 
-    window.addEventListener("resize", handleResize);
+      if (width > 786) {
+        useToogle(true);
+      }
+    });
   }, []);
 
   const without = {
@@ -38,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full  back">
+    <div className="w-full  back ">
       <nav className="lg:px-16 px-6   mx-auto   flex flex-wrap items-center lg:py-0 py-2 ">
         <div className="flex-1 flex justify-between items-center">
           <SmoothScrollLink to="/" className="flex text-lg font-semibold ">
@@ -68,12 +69,12 @@ function Navbar() {
         <div
           className={
             toggle
-              ? "hidden lg:flex lg:items-center lg:w-auto w-full bg-[#ffffff00] p-5 rounded-lg mt-10  "
-              : "lg:flex lg:items-center  w-full bg-white rounded-xl"
+              ? "hidden lg:flex lg:items-center lg:w-auto w-full bg-[#ffffff00] p-5 rounded-lg mt-10 "
+              : "lg:flex lg:items-center  w-full bg-white rounded-xl z-10 mt-10"
           }
           id="menu"
         >
-          <nav className="max-lg:absolute max-lg:left-0 max-lg:w-full max-lg:bg-white rounded-lg  max-md:mt-36 z-20  ">
+          <nav className=" max-lg:left-0 max-lg:w-full max-lg:bg-white rounded-lg     ">
             <ul className="  text-xl  text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex lg:pt-0">
               <li className="py-2 lg:py-0 lg:text-[#f8f8f8] font-bold max-lg:hover:bg-[#21209C]">
                 <SmoothScrollLink
