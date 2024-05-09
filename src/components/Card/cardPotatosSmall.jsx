@@ -24,7 +24,7 @@ function CardPotatosSmall() {
       carousel: [fina2, fina3, fina4],
 
       descripcion:
-        " Papa Fina: Versátil tubérculo cultivado globalmente, esencial en la dieta, valorado por su sabor y textura en diversas preparaciones culinarias.",
+        " Ideal para freír, esta variedad es la preferida por los amantes de las papas fritas crujientes y doradas.",
     },
     {
       img: agata1,
@@ -40,7 +40,7 @@ function CardPotatosSmall() {
       carousel: [ota2, ota3, ota4],
 
       descripcion:
-        " Papa Orquesta: Tubérculo excepcional, reconocido por su amplia gama de formas y sabores, una verdadera variedad culinaria.",
+        "  Con una textura suave y un sabor delicado, es perfecta para purés y platos horneados.",
     },
   ];
 

@@ -23,7 +23,7 @@ function CardPotatos() {
       carousel: [fina2, fina3, fina4],
 
       descripcion:
-        " Papa Fina: Versátil tubérculo cultivado globalmente, esencial en la dieta, valorado por su sabor y textura en diversas preparaciones culinarias.",
+        " Versátil tubérculo cultivado globalmente, esencial en la dieta, valorado por su sabor y textura en diversas preparaciones culinarias.",
     },
     {
       img: agata1,
@@ -31,7 +31,7 @@ function CardPotatos() {
       carousel: [agata2, agata3, agata4],
 
       descripcion:
-        " Agatha: piel fina, carne amarilla, apreciada por su sabor y textura en diferentes platillos.",
+        "  piel fina, carne amarilla, apreciada por su sabor y textura en diferentes platillos.",
     },
     {
       img: ota1,
@@ -39,45 +39,38 @@ function CardPotatos() {
       carousel: [ota2, ota3, ota4],
 
       descripcion:
-        " Papa Orquesta: Tubérculo excepcional, reconocido por su amplia gama de formas y sabores, una verdadera variedad culinaria.",
+        "  Tubérculo excepcional, reconocido por su amplia gama de formas y sabores, una verdadera variedad culinaria.",
     },
   ];
 
   return (
     <div className="mt-10  ">
       <h1 className="text-center text-4xl font-bold ">Nuestros Productos</h1>
-      <div className="flex gap-10 justify-center  mt-10">
+      <div className="flex  justify-around gap-7  mx-auto max-w-[1200px] h-[250px]  mt-10">
         {img.map((item) => {
           return (
-            <div key={Math.random(2 * 23)} className="">
-              <div>
-                <Card imgSrc={item.img} className="bg-[#c19b43] ">
-                  <div className="p-0">
-                    <h5 className="text-xl font-semibold tracking-tight text-white text-center dark:text-white">
-                      {item.nombre}
-                    </h5>
-                  </div>
-                </Card>
-              </div>
-
-              <div className="w-full h-[50%] mt-6 ">
-                <Carousel pauseOnHover leftControl=" " rightControl=" ">
-                  <img
-                    className=" object-cover w-[100%] h-[100%]"
-                    src={item.carousel[0]}
-                    alt=""
-                  />
-                  <img
-                    className="object-cover w-[100%] h-[100%]"
-                    src={item.carousel[1]}
-                    alt=""
-                  />
-                  <img
-                    className="object-cover w-[100%] h-[100%]"
-                    src={item.carousel[2]}
-                    alt=""
-                  />
-                </Carousel>
+            <div key={Math.random(2 * 23)} className=" w-[400px] h-[300px]">
+              <div className="bg-[#FEA423]  rounded-xl  ">
+                <h1 className="text-2xl font-bold ml-2 pt-2  ">
+                  {item.nombre}
+                </h1>
+                <div className="mt-6 ">
+                  <Carousel pauseOnHover className="w-full h-[150px]">
+                    <img
+                      className=" object-cover  w-full h-[200px]"
+                      src={item.carousel[0]}
+                      alt=""
+                    />
+                    <img src={item.carousel[1]} alt="" />
+                    <img src={item.carousel[2]} alt="" />
+                  </Carousel>
+                </div>
+                <div className="bg-[#ffff] rounded-b-xl">
+                  <p className=" pt-3 ml-3 text-xl  rounded-lg">
+                    <span className="font-bold "> {item.nombre}</span>:
+                    {item.descripcion}`
+                  </p>
+                </div>
               </div>
             </div>
           );

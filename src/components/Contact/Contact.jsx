@@ -5,7 +5,7 @@ function Contact() {
     <div id="contact">
       <div class="flex justify-center items-center w-screen max-xs:px-2    ">
         <div class="container mx-auto  lg:px-20">
-          <div class="   sm:w-full  p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-[#e9e9e9]">
+          <div class="   sm:w-[80vw] max-x:mx-auto max-md:mx-auto  p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-[#e9e9e9]">
             <div class="flex">
               <h1 class="font-bold uppercase text-5xl">
                 envianos un <br /> mensaje
@@ -49,13 +49,7 @@ function Contact() {
             </div>
           </div>
 
-          <div
-            class="w-full lg:-mt-[600px] lg:w-2/6 px-8 py-12 ml-auto bg-[#1a1a61f4] rounded-2xl "
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="500"
-            data-aos-duration="500"
-          >
+          <div class="w-[80vw]  max-x:mx-auto lg:-mt-[600px] lg:w-2/6 px-8 py-12 x:ml-auto bg-[#1a1a61f4] rounded-2xl ">
             <div class="flex flex-col text-white">
               <h1 class="font-bold uppercase text-3xl my-2">
                 El clasico regio te espera

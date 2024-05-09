@@ -41,7 +41,7 @@ function Maps({ array, larg, heith, view }) {
         options={{
           mapTypeControl: false,
           fullscreenControl: false,
-          streetView: false,
+
           navigationControl: false,
           disableDefaultUI: true,
           styles: mapOptions.googleMapsTheme,
