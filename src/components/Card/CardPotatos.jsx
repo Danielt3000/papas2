@@ -44,14 +44,14 @@ function CardPotatos() {
   ];
 
   return (
-    <div className="mt-10  ">
+    <div>
       <h1 className="text-center text-4xl font-bold ">Nuestros Productos</h1>
       <div className="flex  justify-around gap-7  mx-auto max-w-[1200px] h-[250px]  mt-10">
         {img.map((item) => {
           return (
             <div key={Math.random(2 * 23)} className=" w-[400px] h-[300px]">
-              <div className="bg-[#FEA423]  rounded-xl  ">
-                <h1 className="text-2xl font-bold ml-2 pt-2  ">
+              <div className="bg-[#242c6c]  rounded-xl ">
+                <h1 className="text-2xl font-bold ml-2 pt-2 text-white  ">
                   {item.nombre}
                 </h1>
                 <div className="mt-6 ">
@@ -65,8 +65,8 @@ function CardPotatos() {
                     <img src={item.carousel[2]} alt="" />
                   </Carousel>
                 </div>
-                <div className="bg-[#ffff] rounded-b-xl">
-                  <p className=" pt-3 ml-3 text-xl  rounded-lg">
+                <div className="bg-[#ffff] ">
+                  <p className=" pt-3 ml-3 text-xl">
                     <span className="font-bold "> {item.nombre}</span>:
                     {item.descripcion}`
                   </p>

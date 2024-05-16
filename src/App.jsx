@@ -3,6 +3,8 @@ import ComponentParallex from "./components/Parallex/ComponentParallex";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Services from "./components/Services/Services";
 
 function App() {
   useEffect(() => {
@@ -13,8 +15,12 @@ function App() {
   }, []);
   return (
     <div>
-      {/* <Home /> */}
-      <ComponentParallex />
+      <Router>
+        <Routes>
+          <Route path="/" element={<ComponentParallex />} />
+          <Route path="/services" element={<Services />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

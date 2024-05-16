@@ -3,7 +3,12 @@ const flowbite = require("flowbite-react/tailwind");
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", flowbite.content()],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    flowbite.content(),
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       screens: {
@@ -13,5 +18,6 @@ export default {
       },
     },
   },
+  presets: [require("@relume_io/relume-tailwind")],
   plugins: [flowbite.plugin()],
 };
